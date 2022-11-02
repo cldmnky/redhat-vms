@@ -1,0 +1,11 @@
+variant: openshift
+version: 4.10.0
+passwd:
+  users:
+    - name: core
+      ssh_authorized_keys:
+        - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcn2qbmAu0O6oPEEoFhPiYWn5oqVrAGOPW1AbsvJMBJ
+      groups:
+        - wheel
+        - plugdev
+      shell: /bin/bash
